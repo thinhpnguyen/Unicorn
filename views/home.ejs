@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= title %> - <%= subtitle %></title>
+
+
+		 <link rel="stylesheet" href="/css/stylesheet.css">
+		 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Mono+One">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+
+	</head>
+	<body>
+		<div class="navbar">
+			<a class="navbar-item left active-link title-text" href="/"><%= title %></a>
+			<a class="navbar-item left" href="/mine">Mine and Sync</a>
+		</div>
+		<div class="title">
+			<h1 class="subtitle-text"><%= subtitle %></h1>
+		</div>
+		<hr class="hr">
+		<%- include('block'); -%>
+		<div class="footerCustom">
+			<p class="footer-item">Team TCP 2021</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+
+	<div class="content">
+		<center>
+			<br>
+			<form action="/submit" id="textform" method="post">
+				<input class="name-input" type="text" name="author" placeholder="Name">
+				<textarea class="post-textarea" name="content" rows="4" cols="50" placeholder="Write some content to add to the network ..."></textarea>
+				<br>
+				<input class="btn" type="submit" value="Post">
+			</form>
+			<br>
+		</center>
+		<div class="posts">
+			<% posts.forEach(function(post){ %>
+        <div class="post_box">
+  				<div class="post_box-header">
+  					<!--<div class="post_box-options"><button class="option-btn">Reply</button></div>-->
+  					<div class="post_box-avatar"><%=post.author[0]%></div>
+  					<div class="name-header"><%=post.author%></div>
+  					<div class="post_box-subtitle"><i>Posted at</i></div>
+  				</div>
+  				<div>
+  					<!--using white-space pre-wrap don't add space in div-->
+  					<div class="post_box-body"><%=post.content%></div>
+  				</div>
+  			</div>
+      <% }) %>
+		</div>
+	</div>
